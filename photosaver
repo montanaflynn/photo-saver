@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+var fse = require('fs-extra')
+var photoSaver = require("./index.js")
+
+var inPath = process.argv[2]
+if (!inPath) {
+	var errorMsg = "No input directory provided.\n"
+		errorMsg += "Usage: photosaver ./inputDir ./outputDir"
+	return console.log(errorMsg)
+}
+
+var outPath = process.argv[3] || './out'
+
+if (fse.existsSync(inPath)) {
+	photoSaver(inPath, outPath)
+} else {
+	console.log("Input directory not found")
+}

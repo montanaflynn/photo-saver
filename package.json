@@ -1,0 +1,26 @@
+{
+  "name": "photo-saver",
+  "version": "0.1.0",
+  "description": "Organize your photos based on exif date and GPS coordinates",
+  "main": "index.js",
+  "dependencies": {
+    "exif": "^0.4.0",
+    "fs-extra": "^0.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "photosaver": "./photorg"
+  },
+  "keywords": [
+    "photo",
+    "save",
+    "exif",
+    "gps",
+    "date"
+  ],
+  "author": "Montana Flynn",
+  "license": "MIT"
+}
