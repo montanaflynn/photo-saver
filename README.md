@@ -2,36 +2,47 @@
 
 Organize your photos based on exif date and GPS coordinates. 
 
-### CLI
+### Usage
 
-#### Install
+This simple tool takes two arguments, an input directory and an output directory. The input directory should be a folder with photos that have exif data. The output directory is where you want the organized files to end up. Of course your original files are left alone.
+
+**Default output directory:** `./out`
+
+#### CLI
 
 ```sh
 sudo npm install photo-saver -g
 ```
 
-#### Usage
-
 ```sh
 photo-saver ./inputDir ./outputDir
 ```
-**Default output directory:** `./out`
 
-### Programatic
-
-#### Install
+#### Programatic
 
 ```sh
 npm install photo-saver --save
 ```
 
-#### Usage
-
 ```js
 var photoSaver = require("photo-saver")
-savePhotos("./in", "./yo")
+savePhotos("./photos", "./organized")
 ```
-**Default output directory:** `./out`
+
+### Example
+
+Here's an example of the output folder structure:
+
+```
+out // output directory 
+	2013-06-14 // directory is the date when photo was taken
+	  51.50, 0.01 // directory is GPS coordinates where photo was taken
+	  51.50, 0.05 
+	2013-06-15
+	  51.52, 0.11
+	  51.52, 0.09
+	  51.52, 0.07
+```
 
 ### Todos
 
