@@ -34,7 +34,7 @@ savePhotos("./photos", "./organized")
 Here's an example of the output folder structure:
 
 ```
-out/ # output directory name
+output-dir/ # output directory name
   2013-06-14/ # directory is the date when photo was taken
     51.50, 0.01/ # directory is GPS coordinates where photo was taken
     51.50, 0.05/ 
