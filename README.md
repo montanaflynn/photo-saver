@@ -2,18 +2,35 @@
 
 Organize your photos based on exif date and GPS coordinates. 
 
-### Install
+### CLI
+
+#### Install
 
 ```sh
-npm install photo-saver -g
+sudo npm install photo-saver -g
 ```
 
-### Usage
+#### Usage
 
 ```sh
-photosaver ./inputDir ./outputDir
+photo-saver ./inputDir ./outputDir
+```
+**Default output directory:** `./out`
+
+### Programatic
+
+#### Install
+
+```sh
+npm install photo-saver --save
 ```
 
+#### Usage
+
+```js
+var photoSaver = require("photo-saver")
+savePhotos("./in", "./yo")
+```
 **Default output directory:** `./out`
 
 ### Todos
