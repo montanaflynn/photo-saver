@@ -34,21 +34,22 @@ savePhotos("./photos", "./organized")
 Here's an example of the output folder structure:
 
 ```
-out // output directory 
-	2013-06-14 // directory is the date when photo was taken
-	  51.50, 0.01 // directory is GPS coordinates where photo was taken
-	  51.50, 0.05 
-	2013-06-15
-	  51.52, 0.11
-	  51.52, 0.09
-	  51.52, 0.07
+out/ # output directory name
+  2013-06-14/ # directory is the date when photo was taken
+    51.50, 0.01/ # directory is GPS coordinates where photo was taken
+    51.50, 0.05/ 
+  2013-06-15/
+    51.52, 0.11/
+    51.52, 0.09/
+    51.52, 0.07/
 ```
 
 ### Todos
 
-- Add testing
-- Add options
 - Better CLI
+- Add testing
+- Add various options
+- Use my reverse-geocoding API to get human readable location.
 
 ### Contributing
 
