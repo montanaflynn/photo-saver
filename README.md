@@ -1,4 +1,4 @@
-# photo-organizer
+# photo-saver
 
 Organize your photos based on exif date and GPS coordinates. 
 
