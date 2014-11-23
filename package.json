@@ -1,6 +1,6 @@
 {
   "name": "photo-saver",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Organize your photos based on exif date and GPS coordinates",
   "main": "index.js",
   "dependencies": {
